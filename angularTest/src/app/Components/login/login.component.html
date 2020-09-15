@@ -1,0 +1,33 @@
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w780">
+        <div class="card card-3">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Login Form</h2>
+                <form  #frm="ngForm" (ngSubmit)="userAuth()">
+                    <div class="input-group">
+                        <input class="input--style-3" [(ngModel)]="UserName" type="text" placeholder="UserName" name="name">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" [(ngModel)]="Password" type="password" placeholder="PassWord" name="password">
+                    </div>
+                  
+                  
+                  
+                    <div class="p-t-10">
+                        <button class="btn btn--pill btn--green" type="submit">Login</button>
+                    </div>
+                    <br>
+                    <div class="p-t-10">
+                        <li><a routerLink="/" routerLinkActive="active">Don't Have Account</a></li>
+                        </div>
+                        <br>
+                        <br>
+                </form>
+             
+            </div>
+        </div>
+    </div>
+</div>
+
+
